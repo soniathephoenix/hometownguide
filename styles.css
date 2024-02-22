@@ -3,12 +3,14 @@ body {
     text-align:center;
     font-family: "Montserrat", sans-serif;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 #hero {
     background-image: url("backgroundi.png");
     background-size:cover;
-    padding: 100px 0 100px 0;
+    padding: 150px 0 150px 0;
     margin-bottom: 0;
     text-shadow: 1px 1px 2px white;
     color: #251F47;
@@ -23,6 +25,8 @@ body {
     background: #86CB92;
     border-radius: 10px;
     font-size: 50px;
+    margin-bottom: 100px;
+    margin-top: 1px;
 }
 
 #middle{
@@ -79,12 +83,13 @@ body {
 
 
 #subtitle{
-    background: #86CB92;
+    background: #260F26;
     padding: 5px 10px;
     text-shadow: 1px 1px 5px black;
     color: white;
     border-radius: 10px;
     font-size: 30px;
+    margin-top: 20px;
 }
 
 .cardp{
