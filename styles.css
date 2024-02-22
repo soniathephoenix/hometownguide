@@ -1,15 +1,17 @@
 body {
     color: white;
-    text-align:center;
+    /* text-align:center; */
     font-family: "Montserrat", sans-serif;
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     margin: 0;
+    /* gets rid of scrolling option so whitespace doesn't appear */
+    overflow-x: hidden;
 }
 
 #hero {
     background-image: url("backgroundi.png");
-    background-size:cover;
+    background-size: cover;
     padding: 150px 0 150px 0;
     margin-bottom: 0;
     text-shadow: 1px 1px 2px white;
@@ -17,6 +19,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* added */
+    text-align: center;
 }
 
 #title {
@@ -27,6 +31,21 @@ body {
     font-size: 50px;
     margin-bottom: 100px;
     margin-top: 1px;
+}
+
+
+#subtitle{
+    background: #260F26;
+    /* 1em - 14px */
+    padding: 0.3em 0.7em;
+    /* padding: 5px 10px; */
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    border-radius: 10px;
+    font-size: 2rem;
+    /* font-size: 30px; */
+    margin: 20px;
+    /* margin-top: 20px; */
 }
 
 #middle{
@@ -41,6 +60,8 @@ body {
 }
 
 #pic{
+    display: flex;
+    margin: auto;
     width: 150px;
     border-radius: 50%;  
     border: 2px solid #86CB92;
@@ -49,18 +70,27 @@ body {
 
 .todo{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    /* added */
+    justify-content: center;
+    justify-items: center;
+    /* below not needed */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 
 .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
     padding: 50px 50px;
-    margin:0 50px 0 50px;
-    
+    margin: 0 50px 0 50px;
 }
 
 .avatar {
     width: 150px;
+    /* added */
+    object-fit: cover;
 }
 
 .card {
@@ -81,7 +111,8 @@ body {
     border: 1px dotted blue;
 }
 
-
+/* move up as ordering is important */
+/* 
 #subtitle{
     background: #260F26;
     padding: 5px 10px;
@@ -90,8 +121,16 @@ body {
     border-radius: 10px;
     font-size: 30px;
     margin-top: 20px;
-}
+} */
 
 .cardp{
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+  /* CSS rules for screens with a width of 600px or less */
+  .todo{ 
+      display: flex;
+      flex-direction: column;
+  }
 }
